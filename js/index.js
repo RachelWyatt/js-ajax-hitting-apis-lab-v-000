@@ -1,5 +1,5 @@
 function getRepositories() {
-  event.preventDefault() 
+  event.preventDefault()
   const currentUser = document.getElementById(`username`).value
   const req = new XMLHttpRequest();
   req.addEventListener('load', showRepositories);
