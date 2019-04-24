@@ -1,3 +1,5 @@
+const token = `token`
+
 function getRepositories() {
   event.preventDefault()
   const currentUser = document.getElementById(`username`).value
