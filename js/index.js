@@ -17,10 +17,10 @@ function displayRepositories(event, data) {
 }
 
 function getCommits(el) {
-  const name = el.dataset.repository; 
+  const name = el.dataset.repository;
   const req = new XMLHttpRequest();
   let user = ducment.getElementById("username").value;
-  req.addEventListener("load", displayCommits); 
+  req.addEventListener("load", displayCommits);
   req.open("GET", `https://api.github.com/repos/${user}/` + name + '/commits');
   req.send();
 }
